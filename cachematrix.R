@@ -2,7 +2,14 @@
 ## functions do
 
 ## Write a short comment describing this function
-##This code contains two functions makeCacheMatrix which makes ##the special "matrix" and then finds the solution(inverse) and ##stores it and cacheSolve which either returns the inverse ##already stored or finds the new solution (inverse). Inside ##these functions are functions get,set,setmatrix and ##getmatrix. When getmatrix is called, if the matrix is already computed, the cached solution is returned else it calculates the inverse and returns as solution
+##This code contains two functions makeCacheMatrix which makes 
+##the special "matrix" and then finds the solution(inverse) and 
+##stores it and cacheSolve which either returns the inverse 
+##already stored or finds the new solution (inverse). Inside 
+##these functions are functions get,set,setmatrix and 
+##getmatrix. When getmatrix is called from cacheSolve, 
+##if the matrix is already computed, the cached solution is returned 
+##else it calculates the inverse and returns as solution
 
 makeCacheMatrix <- function(x = matrix()) {
 m<-NULL
